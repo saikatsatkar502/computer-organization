@@ -1,0 +1,183 @@
+Assignments on Basic gates
+
+AND gate
+Symbol:
+
+ 
+ 
+
+Truth table:	   
+ 	   
+A	B	Y	   
+0	0	0	   
+0	1	0	   
+1	0	0	   
+1	1	1	 
+
+y = a & b;
+
+OR GATE:
+module or_gate(
+    input a,
+    input b,
+    output c );
+assign c=a | b;
+endmodule
+
+Symbol:
+ 
+
+
+
+Truth table:
+
+
+ 
+A	B	Y	   
+0	0	0	   
+0	1	1	   
+1	0	1	   
+1	1	1	 
+
+
+
+
+
+
+
+
+NOT GATE:
+module not_gate(
+    input a,
+    output c );
+assign c=~a;
+endmodule
+
+
+Symbol:
+ 
+
+
+
+Truth table:
+
+
+ 
+A		z	 
+1							0
+0							1
+
+
+
+
+NOR GATE:
+module nor_gate(
+    input a,
+    input b,
+    output c );
+assign c=~(a | b);
+endmodule
+
+
+Symbol:
+ 
+
+
+
+
+Truth table:
+
+
+ 
+A	B	x	   
+0	0	1	   
+0	1	0	   
+1	0	0	   
+1	1	0	 
+
+
+
+
+
+
+
+XOR GATE:
+module xor_gate(
+    input a,
+    input b,
+    output c );
+assign c=a ^ b;
+endmodule
+
+
+Symbol:
+ 
+
+
+
+Truth table:
+
+ 
+A	B	Y	   
+0	0	0	   
+0	1	1	   
+1	0	1	   
+1	1	0	 
+
+
+
+
+
+
+
+XNOR GATE:
+module xnor_gate(
+    input a,
+    input b,
+    output c );
+assign c=~(a ^ b);
+endmodule
+
+Symbol:
+ 
+
+
+
+
+Truth table:
+
+
+
+ 
+A	B	Y	   
+0	0	1	   
+0	1	0	   
+1	0	0	   
+1	1	1	 
+
+
+
+
+
+
+
+NAND GATE:
+module and_gate(
+    input a,
+    input b,
+    output c );
+assign c=~(a&b);
+endmodule
+
+
+Symbol:
+ 
+
+
+Truth table:
+ 
+A	B	Y	   
+0	0	1	   
+0	1	1	   
+1	0	1	   
+1	1	0	 
