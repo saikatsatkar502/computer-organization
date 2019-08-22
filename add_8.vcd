@@ -1,0 +1,63 @@
+$date
+	Thu Aug 22 03:38:31 2019
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module add_test $end
+$var wire 8 ! C [7:0] $end
+$var wire 1 " cr $end
+$var reg 8 # A [7:0] $end
+$var reg 8 $ B [7:0] $end
+$scope module a_8 $end
+$var wire 1 " carry $end
+$var wire 8 % f [7:0] $end
+$var wire 8 & x [7:0] $end
+$var wire 8 ' y [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx '
+bx &
+bx %
+bx $
+bx #
+x"
+bx !
+$end
+#5
+0"
+b101110 !
+b101110 %
+b101 $
+b101 '
+b1010111 #
+b1010111 &
+#10
+b1011111 !
+b1011111 %
+b10101100 $
+b10101100 '
+b10010 #
+b10010 &
+#15
+1"
+b10000000 !
+b10000000 %
+b10101111 $
+b10101111 '
+b1010010 #
+b1010010 &
+#20
+b1111100 !
+b1111100 %
+b110011 $
+b110011 '
+b11000110 #
+b11000110 &
+#25
