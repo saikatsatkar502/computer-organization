@@ -1,0 +1,17 @@
+module add_test;
+reg[7:0] A,B;
+wire[7:0] C;
+wire cr;
+add_8 a_8r(.X(A),.Y(B),.Z(C),.Carry(cr));
+initial
+begin
+$dumpfile("a_8r.vcd");
+$dumpvars(0,add_test);
+$monitor($time,"A=%h,B=%h,C=%h,cr=%b",A,B,C,cr);
+#5 A=8'hcf;B=8'h0c;
+#5 A=8'h20;B=8'hca;
+#5 A=8'h56;B=8'haf;
+#5 A=8'hc6;B=8'haf;
+#5 $finish;
+end 
+endmodule
